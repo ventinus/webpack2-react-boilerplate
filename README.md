@@ -26,7 +26,8 @@ Manage npm dependencies with yarn:
 
 
 ### TODOS
-- extract/rework webpack config with dev vs prod builds
 - how to import fonts
 - organize base styles/layouts
+- setup testing
+- extract/rework webpack config with dev vs prod builds
 - figure out how to deploy to heroku
