@@ -19,6 +19,12 @@ Start prod server:
 Run linter (currently set to airbnb eslint rules):
 `npm run lint`
 
+Run linter in watch mode:
+`npm run lint:watch`
+
+Run dev server and linter in watch mode:
+`npm run start:lint`
+
 Manage npm dependencies with yarn:
 - saves to dependencies: `yarn add $PACKAGE`
 - saves to devDependencies: `yarn add --dev $PACKAGE`
