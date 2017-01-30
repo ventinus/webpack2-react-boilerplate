@@ -1,5 +1,0 @@
-- add README.md
-- extract/rework webpack config with dev vs prod builds
-- how to import fonts
-- how to organize base styles
-  - how and where to declare sass vars, mixins, functions...

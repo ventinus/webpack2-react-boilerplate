@@ -18,3 +18,10 @@ Start prod server:
 
 Run linter (currently set to airbnb eslint rules):
 `npm run lint`
+
+
+### TODOS
+- extract/rework webpack config with dev vs prod builds
+- how to import fonts
+- organize base styles/layouts
+- figure out how to deploy to heroku
