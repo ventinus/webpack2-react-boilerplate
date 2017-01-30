@@ -1,9 +1,7 @@
 import { combineReducers } from 'redux';
 
 
-const sample = (state = '', action) => {
-  return state;
-}
+const sample = (state = '', action) => state;
 
 export default combineReducers({
   sample
