@@ -24,8 +24,6 @@ Manage npm dependencies with yarn:
 - saves to devDependencies: `yarn add --dev $PACKAGE`
 - remove from either set of dependencies: `yarn remove $PACKAGE`
 
-test
-
 
 ### TODOS
 - extract/rework webpack config with dev vs prod builds
