@@ -19,6 +19,11 @@ Start prod server:
 Run linter (currently set to airbnb eslint rules):
 `npm run lint`
 
+Manage npm dependencies with yarn:
+- saves to dependencies: `yarn add $PACKAGE`
+- saves to devDependencies: `yarn add --dev $PACKAGE`
+- remove from either set of dependencies: `yarn remove $PACKAGE`
+
 
 ### TODOS
 - extract/rework webpack config with dev vs prod builds
