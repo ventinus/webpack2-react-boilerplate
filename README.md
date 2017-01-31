@@ -1,7 +1,7 @@
 ## Ensure yarn is installed:
 `brew update`
 `brew install yarn`
-Add `export PATH="$PATH:`yarn global bin`"` to your profile. [Guide](https://yarnpkg.com/en/docs/install)
+Add ``export PATH="$PATH:`yarn global bin`"`` to your profile. [Guide](https://yarnpkg.com/en/docs/install)
 
 ## Install dependencies:
 `yarn install`
