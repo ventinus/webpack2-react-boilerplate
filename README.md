@@ -32,8 +32,8 @@ Manage npm dependencies with yarn:
 
 
 ### TODOS
-- how to import fonts
-- organize base styles/layouts
+- setup base styling, mixins, helpers
+- learn about react router and how it works with redux store
 - setup testing
 - extract/rework webpack config with dev vs prod builds
 - figure out how to deploy to heroku

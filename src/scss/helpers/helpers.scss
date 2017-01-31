@@ -1,0 +1,9 @@
+@import "~scss/helpers/mixins.scss";
+
+// --------------------------------------------------
+// Visibility
+// --------------------------------------------------
+
+.is-visually-hidden {
+  @include isVisuallyHidden();
+}

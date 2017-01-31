@@ -20,7 +20,7 @@ module.exports = function (env) {
       'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }
     }),
     new webpack.NamedModulesPlugin(),
-    new ExtractTextPlugin("styles.css"),
+    new ExtractTextPlugin("styles.css")
   ];
 
   if (isProd) {

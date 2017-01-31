@@ -1,7 +1,0 @@
-@mixin bg-color($color) {
-  background-color: $color;
-}
-
-@function image-url($image) {
-  @return url("../assets/images/#{$image}")
-}

@@ -1,0 +1,37 @@
+@mixin bg-color($color) {
+  background-color: $color;
+}
+
+@function image-url($image) {
+  @return url("../assets/images/#{$image}");
+}
+
+@mixin declare-otf-font(
+  $font-family,
+  $font-filename-otf,
+  $font-weight : normal,
+  $font-style : normal,
+  $font-stretch : normal
+){
+  @font-face {
+    font-family: "#{$font-family}";
+    src: font-url("#{$font-filename-otf}.otf") format("opentype");
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+    font-weight: $font-weight;
+  }
+}
+
+@mixin isVisuallyHidden {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  margin: 0 !important;
+  clip: rect(1px 1px 1px 1px) !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
+}

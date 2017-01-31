@@ -1,0 +1,7 @@
+@import "~scss/helpers/mixins.scss";
+
+@include declare-otf-font('GothamHTF-Bold',    "../assets/fonts/GothamHTF-Bold");
+@include declare-otf-font('GothamHTF-Book',    "../assets/fonts/GothamHTF-Book");
+@include declare-otf-font('GothamHTF-Light',   "../assets/fonts/GothamHTF-Light");
+@include declare-otf-font('GothamHTF-Medium',  "../assets/fonts/GothamHTF-Medium");
+@include declare-otf-font('GothamHTF-Thin',    "../assets/fonts/GothamHTF-Thin");
