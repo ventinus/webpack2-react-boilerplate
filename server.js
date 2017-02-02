@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // send all requests to index.html so browserHistory in React Router works
 app.get('*', function (req, res) {
-  res.sendFile('dist/index.html');
+  res.sendFile('/dist/index.html');
 })
 
 var PORT = process.env.PORT || 8080;
