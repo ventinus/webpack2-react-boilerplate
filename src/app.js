@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory, IndexRoute } from "react-router";
+import { Router, Route, browserHistory, IndexRoute } from "react-router";
 import { Provider } from 'react-redux';
 import { syncHistoryWithStore } from 'react-router-redux'
 
@@ -16,7 +16,7 @@ import Contact from './containers/Contact';
 
 import 'index.html';
 
-const history = syncHistoryWithStore(hashHistory, store);
+const history = syncHistoryWithStore(browserHistory, store);
 
 ReactDOM.render(
   <Provider store={ store }>
