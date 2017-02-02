@@ -785,14 +785,6 @@ babel-plugin-transform-strict-mode@^6.22.0:
     babel-runtime "^6.22.0"
     babel-types "^6.22.0"
 
-babel-polyfill@^6.2.0:
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.22.0.tgz#1ac99ebdcc6ba4db1e2618c387b2084a82154a3b"
-  dependencies:
-    babel-runtime "^6.22.0"
-    core-js "^2.4.0"
-    regenerator-runtime "^0.10.0"
-
 babel-preset-es2015:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-preset-es2015/-/babel-preset-es2015-6.22.0.tgz#af5a98ecb35eb8af764ad8a5a05eb36dc4386835"
@@ -2461,12 +2453,6 @@ ieee754@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
 
-if-env:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/if-env/-/if-env-1.0.0.tgz#6e09082cdd3f2ccfb75baf022a4a971565f6007c"
-  dependencies:
-    npm-run-all "1.4.0"
-
 ignore@^3.2.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.2.2.tgz#1c51e1ef53bab6ddc15db4d9ac4ec139eceb3410"
@@ -3233,16 +3219,6 @@ npm-run-all@^4.0.1:
     read-pkg "^2.0.0"
     shell-quote "^1.6.1"
     string.prototype.padend "^3.0.0"
-
-npm-run-all@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/npm-run-all/-/npm-run-all-1.4.0.tgz#a469bb9feabe5bf3aa9916833baf6776582e8948"
-  dependencies:
-    babel-polyfill "^6.2.0"
-    minimatch "^3.0.0"
-    ps-tree "^1.0.1"
-    shell-quote "^1.4.3"
-    which "^1.2.0"
 
 npmlog@^4.0.0, npmlog@^4.0.1, "npmlog@0 || 1 || 2 || 3 || 4":
   version "4.0.2"
@@ -4268,7 +4244,7 @@ shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
 
-shell-quote@^1.4.3, shell-quote@^1.6.1:
+shell-quote@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
   dependencies:
@@ -4864,7 +4840,7 @@ which-module@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-1.0.0.tgz#bba63ca861948994ff307736089e3b96026c2a4f"
 
-which@^1.2.0, which@^1.2.9, which@1:
+which@^1.2.9, which@1:
   version "1.2.12"
   resolved "https://registry.yarnpkg.com/which/-/which-1.2.12.tgz#de67b5e450269f194909ef23ece4ebe416fa1192"
   dependencies:
