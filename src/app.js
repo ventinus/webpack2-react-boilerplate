@@ -22,9 +22,9 @@ ReactDOM.render(
   <Provider store={ store }>
     <Router history={ history }>
       <Route path="/" component={ Layout }>
+        <IndexRoute component={ Home } />
         <Route path="about" component={ About } />
         <Route path="contact" component={ Contact } />
-        <IndexRoute component={ Home } />
       </Route>
     </Router>
   </Provider>,
