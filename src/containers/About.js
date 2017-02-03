@@ -1,9 +1,8 @@
 import React from 'react';
 
-const About = ({children}) => (
+const About = () => (
   <div>
     <h2>About Page</h2>
-    { children }
   </div>
 );
 

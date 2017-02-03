@@ -1,9 +1,8 @@
 import React from 'react';
 
-const Contact = ({children}) => (
+const Contact = () => (
   <div>
     <h2>Contact Page</h2>
-    { children }
   </div>
 );
 

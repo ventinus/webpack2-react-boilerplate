@@ -1,9 +1,10 @@
 import React from 'react';
+import LocalImg from '../components/LocalImg/LocalImg';
 
-const Home = ({children}) => (
+const Home = () => (
   <div>
     <h2>Home page</h2>
-    { children }
+    <LocalImg name="react.png" className='asdf' />
   </div>
 );
 
