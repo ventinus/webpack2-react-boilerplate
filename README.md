@@ -72,7 +72,7 @@ Until the `sass-resources-plugin` fully supports Webpack 2, there are some small
 
 
 ## Deploying to Heroku
-Still a WIP, but project building occurs on staging/production after the deploy which means the webpack packages for building need to be included as dependencies and not devDependencies. There is an issue with node-sass so it needs to be rebuilt with each deploy. This is handled automatically by the `Procfile` which heroku executes after a successful deploy.
+Still a WIP, but project building occurs on staging/production after the deploy which means the webpack packages for building need to be included as dependencies and not devDependencies. There is an issue with node-sass so it needs to be rebuilt with each deploy. This is handled automatically by the `Procfile` which heroku executes after a successful deploy. Normal command: `git push heroku master` or `git push heroku $BRANCH:master`
 
 
 ### TODOS

@@ -4,6 +4,7 @@ import { Router, Route, browserHistory, IndexRoute } from "react-router";
 import { Provider } from 'react-redux';
 import { syncHistoryWithStore } from 'react-router-redux'
 
+// Import redux store
 import store from 'store';
 
 // Import layouts
