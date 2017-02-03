@@ -6,13 +6,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
+    "start": "if-env NODE_ENV=production && npm run heroku:build || webpack-dev-server",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true",
     "build": "webpack --env.prod=true",
     "lint": "node_modules/.bin/esw ./src --color -f table",
     "lint:watch": "npm run lint -- -w --cache",
     "start:lint": "npm-run-all --parallel start lint:watch",
-    "postinstall": "npm rebuild node-sass && npm run build"
+    "heroku:build": "npm rebuild node-sass && npm run build"
   },
   "dependencies": {
     "babel-core": "^6.22.1",
