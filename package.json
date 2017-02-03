@@ -11,8 +11,7 @@
     "build": "webpack --env.prod=true",
     "lint": "node_modules/.bin/esw ./src --color -f table",
     "lint:watch": "npm run lint -- -w --cache",
-    "start:lint": "npm-run-all --parallel start lint:watch",
-    "heroku:build": "npm rebuild node-sass && npm run build && node server.js"
+    "start:lint": "npm-run-all --parallel start lint:watch"
   },
   "dependencies": {
     "babel-core": "^6.22.1",
