@@ -3,34 +3,44 @@
 `brew install yarn`
 Add ``export PATH="$PATH:`yarn global bin`"`` to your profile. [Guide](https://yarnpkg.com/en/docs/install)
 
+
 ## Install dependencies:
 `yarn install`
+
 
 ## Start dev server:
 `npm start`
 
+
 ## Generate dev build:
 `webpack`
+
 
 ## Generate prod build:
 `npm run build`
 
+
 ## Start prod server:
 `npm run prod`
+
 
 ## Run linter (currently set to airbnb eslint rules):
 `npm run lint`
 
+
 ## Run linter in watch mode:
 `npm run lint:watch`
 
+
 ## Run dev server and linter in watch mode:
 `npm run start:lint`
+
 
 ## Manage npm dependencies with yarn:
 - saves to dependencies: `yarn add $PACKAGE`
 - saves to devDependencies: `yarn add --dev $PACKAGE`
 - remove from either set of dependencies: `yarn remove $PACKAGE`
+
 
 ## Notes on styling
 Until the `sass-resources-plugin` fully supports Webpack 2, there are some small things to be aware of:
@@ -61,9 +71,12 @@ Until the `sass-resources-plugin` fully supports Webpack 2, there are some small
   - Any specially defined mixins need to have the file included at the top of any `.scss` file where needed. Import with `@import "~scss/helpers/mixins.scss";`
 
 
+## Deploying to Heroku
+Still a WIP, but project building occurs on staging/production after the deploy which means the webpack packages for building need to be included as dependencies and not devDependencies. There is an issue with node-sass so it needs to be rebuilt with each deploy. This is handled automatically by the `Procfile` which heroku executes after a successful deploy.
+
+
 ### TODOS
 - setup base styling, mixins, helpers
 - learn about react router and how it works with redux store
 - setup testing
 - extract/rework webpack config with dev vs prod builds
-- figure out how to deploy to heroku
