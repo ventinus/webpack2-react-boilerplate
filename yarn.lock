@@ -32,8 +32,8 @@ acorn@^4.0.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.4.tgz#17a8d6a7a6c4ef538b814ec9abac2779293bf30a"
 
 acorn@^4.0.3, acorn@^4.0.4:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.5.tgz#d5c76ef581c59748047067e2fc96302b1333c132"
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.7.tgz#084596cd4636f796d2273990c699e13fe4092ac8"
 
 ajv-keywords@^1.0.0, ajv-keywords@^1.1.1:
   version "1.5.1"
