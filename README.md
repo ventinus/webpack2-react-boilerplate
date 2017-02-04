@@ -77,6 +77,5 @@ Still a WIP, but project building occurs on staging/production after the deploy 
 
 ### TODOS
 - setup base styling, mixins, helpers
-- learn about react router and how it works with redux store
 - setup testing
 - extract/rework webpack config with dev vs prod builds

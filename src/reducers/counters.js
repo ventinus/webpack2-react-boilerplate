@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
 import * as types from '../actions/actionTypes';
 
 // 2 Approaches - using object keys or switch statements, both of which are outlined.
