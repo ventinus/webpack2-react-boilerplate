@@ -79,7 +79,7 @@ module.exports = function (env) {
         {
           test: /\.scss$/,
           exclude: /node_modules/,
-          use: ExtractTextPlugin.extract({
+          loader: ExtractTextPlugin.extract({
             fallbackLoader: 'style-loader',
             loader: 'css-loader!sass-loader'
           })
