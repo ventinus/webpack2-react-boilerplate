@@ -3,7 +3,7 @@ const { PropTypes } = React;
 
 const LocalImg = ({name, className, alt}) => {
   return (
-    <img src={ `/assets/images/${name}` } className={ className } alt={ `${alt}` }/>
+    <img src={ `/src/assets/images/${name}` } className={ className } alt={ `${alt}` }/>
   );
 }
 
