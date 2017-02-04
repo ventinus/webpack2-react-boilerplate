@@ -20,8 +20,12 @@ Add ``export PATH="$PATH:`yarn global bin`"`` to your profile. [Guide](https://y
 `npm run build`
 
 
-## Start prod server:
+## Start prod server (webpack):
 `npm run prod`
+
+
+## Start Express prod server (after `npm run build`):
+`node server.js`
 
 
 ## Run linter (currently set to airbnb eslint rules):
@@ -40,6 +44,7 @@ Add ``export PATH="$PATH:`yarn global bin`"`` to your profile. [Guide](https://y
 - saves to dependencies: `yarn add $PACKAGE`
 - saves to devDependencies: `yarn add --dev $PACKAGE`
 - remove from either set of dependencies: `yarn remove $PACKAGE`
+- build dependencies need to be saved in `dependencies` so that Heroku will install them it when deploying
 
 
 ## Notes on styling
@@ -72,7 +77,7 @@ Until the `sass-resources-plugin` fully supports Webpack 2, there are some small
 
 
 ## Deploying to Heroku
-Still a WIP, but project building occurs on staging/production after the deploy which means the webpack packages for building need to be included as dependencies and not devDependencies. There is an issue with node-sass so it needs to be rebuilt with each deploy. This is handled automatically by the `Procfile` which heroku executes after a successful deploy. Normal command: `git push heroku master` or `git push heroku $BRANCH:master`
+Still a WIP, but project building occurs on staging/production after the deploy which means the webpack packages for building need to be included as dependencies and not devDependencies. There is an issue with node-sass so it needs to be rebuilt with each deploy. This is handled automatically by the `Procfile` which heroku executes after a successful deploy. Normal command: `git push heroku master` or `git push heroku $BRANCH:master`. You can monitor heroku logs after deploy to ensure build succeeds with `heroku logs --tail`.
 
 
 ### TODOS
