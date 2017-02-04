@@ -94,7 +94,7 @@ module.exports = function (env) {
         {
           test: /\.(jpg|png|woff|woff2|eot|ttf)$/,
           exclude: /node_modules/,
-          use: 'url-loader'
+          use: 'url-loader?limit=5000'
         }
       ],
     },

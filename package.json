@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "prod": "cross-env NODE_ENV=production webpack-dev-server --env.prod=true",
-    "build": "webpack --env.prod=true",
+    "build": "rm -rf dist/ && webpack --env.prod=true",
     "lint": "node_modules/.bin/esw ./src --color -f table",
     "lint:watch": "npm run lint -- -w --cache",
     "start:lint": "npm-run-all --parallel start lint:watch"
