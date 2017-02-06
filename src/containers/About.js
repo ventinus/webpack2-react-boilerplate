@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Counter from '../components/Counter';
-import * as types from '../actions/actionTypes';
+import Counter from 'components/Counter';
+import * as types from 'actions/actionTypes';
 
 const About = (props) => {
   const onAddCounterClick = () => {

@@ -10,13 +10,13 @@ import store from 'store';
 import rootReducer from 'reducers';
 
 // Import layout components
-import MainLayout from './layouts/MainLayout';
+import MainLayout from 'layouts/MainLayout';
 
 // Import container components
-import Home from './containers/Home';
-import About from './containers/About';
-import Contact from './containers/Contact';
-import NotFound from './containers/NotFound';
+import Home from 'containers/Home';
+import About from 'containers/About';
+import Contact from 'containers/Contact';
+import NotFound from 'containers/NotFound';
 
 import 'index.html';
 

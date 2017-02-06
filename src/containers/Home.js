@@ -1,5 +1,5 @@
 import React from 'react';
-import LocalImg from '../components/LocalImg';
+import LocalImg from 'components/LocalImg';
 
 const Home = () => (
   <div>
