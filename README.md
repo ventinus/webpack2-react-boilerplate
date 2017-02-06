@@ -50,14 +50,19 @@ Add ``export PATH="$PATH:`yarn global bin`"`` to your profile. [Guide](https://y
 ## Notes on styling
 Until the `sass-resources-plugin` fully supports Webpack 2, there are some small things to be aware of:
   - Variables are defined in 2 settings: attached in `:root {}` and through normal SASS `$var` declaration.
-    - Variables on `:root` are to remain constant and are globally accessible in any `.scss` file. Variables are declared with two `--` at the start and accessed by wrapping the name with `var()`. For example:
+    - Variables on `:root` are to remain constant (by practice) and are globally accessible in any `.scss` file. They are overwritable and can be scoped and inherited from any element. Variables are declared with two `--` at the start and accessed by wrapping the name with `var()`. For example:
       ```css
       :root {
         --color-blue: #0000FF;
       }
 
       .element {
+        --mt: 10px;
         color: var(--color-blue);
+
+        .element__child {
+          margin-top: var(--mt);
+        }
       }
       ```
     - Variables declared with the `$var-name` SASS syntax are locally scoped so it is necessary to import the variables file where needed. Import with `@import "~scss/helpers/variables.scss";`. These can be programattically changed to calculate an end value, such as in a `@for` loop. For example:
@@ -73,7 +78,9 @@ Until the `sass-resources-plugin` fully supports Webpack 2, there are some small
       }
       ```
       It is, however, possible to wrap a `var(--top)` with `calc()` so maybe it's all moot depending on which browsers you want to support and how complex the calculations are. [caniuse-calc](http://caniuse.com/#search=calc)
+    - A big HOWEVER... if you need to manipulate a color hex value such as with `rgba()`, that variable needs to be stored in a sass `$variable`
   - Any specially defined mixins need to have the file included at the top of any `.scss` file where needed. Import with `@import "~scss/helpers/mixins.scss";`
+  - [More info on native css variables](https://blog.hospodarets.com/css_properties_in_depth)
 
 
 ## Deploying to Heroku
