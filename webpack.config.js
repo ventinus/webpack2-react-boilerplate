@@ -133,7 +133,7 @@ module.exports = function (env) {
         chunks: false,
         hash: false,
         modules: false,
-        publicPath: false,
+        publicPath: '/',
         timings: true,
         version: false,
         warnings: true,

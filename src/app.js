@@ -14,6 +14,7 @@ import MainLayout from 'layouts/MainLayout';
 
 // Import container components
 import Home from 'containers/Home';
+import Home2 from 'containers/Home2';
 import About from 'containers/About';
 import Contact from 'containers/Contact';
 import NotFound from 'containers/NotFound';
@@ -30,8 +31,11 @@ ReactDOM.render(
         <IndexRoute component={ Home } />
         <Route path="about" component={ About } />
         <Route path="contact" component={ Contact } />
-        <Route path="*" component={ NotFound } />
       </Route>
+      <Route path="/nested" component={ MainLayout }>
+        <Route path="home" component={ Home2 } />
+      </Route>
+      <Route path="*" component={ NotFound } />
     </Router>
   </Provider>,
   document.getElementById('root')
