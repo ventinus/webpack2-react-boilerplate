@@ -1,49 +1,19 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Counter from 'components/Counter';
-import types from 'actions/actionTypes';
+import { addCounter } from 'actions';
 
-const About = (props) => {
-  const onAddCounterClick = () => {
-    props.dispatch({
-      type: types.ADD_COUNTER
-    });
-  }
-
-  const onIncrementCounterClick = (index) => {
-    props.dispatch({
-      type: types.INCREMENT_COUNTER,
-      index: index
-    });
-  }
-
-  const onDecrementCounterClick = (index) => {
-    props.dispatch({
-      type: types.DECREMENT_COUNTER,
-      index: index
-    });
-  }
-
-  const onRemoveCounterClick = (index) => {
-    props.dispatch({
-      type: types.REMOVE_COUNTER,
-      index: index
-    });
-  }
-
+const About = ({counters, onAddClick}) => {
   return (
     <div>
       <h2>About Page</h2>
-      <button type="button" onClick={ onAddCounterClick }>Add counter</button>
+      <button type="button" onClick={ onAddClick }>Add counter</button>
       <div className="counters">
-        { props.counters.map((c, i) =>
+        { counters.map((c, i) =>
           <Counter
             key={ i }
             value={ c }
             index={ i }
-            onIncrementClick={ onIncrementCounterClick.bind(null, i) }
-            onDecrementClick={ onDecrementCounterClick.bind(null, i) }
-            onRemoveClick={ onRemoveCounterClick.bind(null, i) }
           />
         )}
       </div>
@@ -59,4 +29,7 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(About);
+export default connect(
+  mapStateToProps,
+  { onAddClick: addCounter }
+)(About);
