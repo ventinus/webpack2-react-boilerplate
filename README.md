@@ -44,7 +44,7 @@ Add ``export PATH="$PATH:`yarn global bin`"`` to your profile. [Guide](https://y
 - saves to dependencies: `yarn add $PACKAGE`
 - saves to devDependencies: `yarn add --dev $PACKAGE`
 - remove from either set of dependencies: `yarn remove $PACKAGE`
-- build dependencies need to be saved in `dependencies` so that Heroku will install them it when deploying
+- build dependencies need to be saved in `dependencies` so that Heroku will install them when deploying
 
 
 ## Notes on styling
@@ -65,6 +65,7 @@ Until the `sass-resources-plugin` fully supports Webpack 2, there are some small
         }
       }
       ```
+      You may opt-out of using variables in this way as it is still new and not supported in any versions of IE and exclusively use the SASS variables. [See MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
     - Variables declared with the `$var-name` SASS syntax are locally scoped so it is necessary to import the variables file where needed. Import with `@import "~scss/helpers/variables.scss";`. These can be programattically changed to calculate an end value, such as in a `@for` loop. For example:
       ```scss
       $top: 10px;
