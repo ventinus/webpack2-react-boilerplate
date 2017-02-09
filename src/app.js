@@ -6,9 +6,6 @@ import { syncHistoryWithStore } from 'react-router-redux';
 
 import store from 'store';
 
-// Import reducers
-import rootReducer from 'reducers';
-
 // Import layout components
 import MainLayout from 'layouts/MainLayout';
 
