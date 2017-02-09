@@ -17,6 +17,7 @@ import Contact from 'containers/Contact';
 import NotFound from 'containers/NotFound';
 
 import 'index.html';
+import 'scss/global.scss';
 
 // create redux store and sync it with the browserHistory
 const history = syncHistoryWithStore(browserHistory, store);

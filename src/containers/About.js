@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import Counter from 'components/Counter';
 import { addCounter } from 'actions';
 
-const About = ({counters, onAddClick}) => {
+const About = ({counters, addCounter}) => {
   return (
     <div>
       <h2>About Page</h2>
-      <button type="button" onClick={ onAddClick }>Add counter</button>
+      <button type="button" onClick={ addCounter }>Add counter</button>
       <div className="counters">
         { counters.map((c, i) =>
           <Counter
@@ -31,5 +31,5 @@ function mapStateToProps(state) {
 
 export default connect(
   mapStateToProps,
-  { onAddClick: addCounter }
+  { addCounter }
 )(About);

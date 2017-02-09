@@ -1,0 +1,23 @@
+//  ==========================================================================
+//
+//  Add Breakpoints for Breakpoint JS to read
+//
+//  ==========================================================================
+@import "~scss/helpers/mixins.scss";
+
+body {
+  /**
+   * These values will not show up in content, but can be
+   * queried by JavaScript to know which breakpoint is active.
+   * Add or remove as many breakpoints as you like.
+   * :before declarations init modules contained within the breakpoint
+   */
+  &:before{
+    content: 'sm';
+    display: none; /* Prevent from displaying. */
+
+    @include breakpoint(md) { content: 'md'; }
+    @include breakpoint(lg) { content: 'lg'; }
+    @include breakpoint(xl) { content: 'xl'; }
+  }
+}

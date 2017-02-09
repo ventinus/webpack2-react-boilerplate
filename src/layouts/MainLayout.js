@@ -1,6 +1,5 @@
 import React from 'react';
-import Nav from '../../components/Nav';
-import styles from './MainLayout.scss';
+import Nav from 'components/Nav';
 
 const MainLayout = ({children}) => (
   <div className="layout">
